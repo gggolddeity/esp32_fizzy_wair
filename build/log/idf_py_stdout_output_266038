@@ -1,0 +1,1014 @@
+Command: /home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/deity/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/deity/esp/fizzy_wair/build/fizzy_wair.elf /home/deity/esp/fizzy_wair/build/bootloader/bootloader.elf -m '/home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python' '/home/deity/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (197) app_init: Application information:[0m
+[0;32mI (197) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (204) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (209) app_init: ELF file SHA256:  fbcc58072...[0m
+[0;32mI (213) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[1;31mE (293) esp_clk_tree: esp_clk_tree_src_get_freq_hz(21): unknown clk src[0m
+[1;31mE (293) i2c.common: i2c_select_periph_clock(280): i2c get clock frequency error[0m
+[1;31mE (293) i2c.master: i2c_param_master_config(805): i2c select clock failed[0m
+[1;31mE (303) i2c.master: i2c_new_master_bus(990): i2c configure parameter failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d6644
+file: "./main/fizzy_wair.c" line 48
+func: make_it
+expression: i2c_new_master_bus(&cfg, &bus)
+
+abort() was called at PC 0x4008554b on core 0
+
+
+Backtrace: 0x400855f1:0x3ffb4440 0x400855b9:0x3ffb4460 0x4008b771:0x3ffb4480 0x4008554b:0x3ffb44f0 0x400d6644:0x3ffb4520 0x400d670b:0x3ffb45b0 0x400e2faa:0x3ffb45d0 0x40086219:0x3ffb4600
+
+
+
+
+ELF file SHA256: fbcc58072
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b624h ( 46628) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b64c vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b678 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001dc80 vaddr=40080000 size=02398h (  9112) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=138c4h ( 80068) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000338ec vaddr=40082398 size=0b1bch ( 45500) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu start user code[0m
+[0;32mI (196) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (196) app_init: Application information:[0m
+[0;32mI (196) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: Ap

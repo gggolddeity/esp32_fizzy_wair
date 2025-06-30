@@ -1,0 +1,11 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=0 /home/deity/esp/fizzy_wair
+CMake Error at /home/deity/esp/esp-idf/tools/cmake/build.cmake:328 (message):
+  Failed to resolve component 'ssd1306' required by component 'main': unknown
+  name.
+Call Stack (most recent call first):
+  /home/deity/esp/esp-idf/tools/cmake/build.cmake:371 (__build_resolve_and_add_req)
+  /home/deity/esp/esp-idf/tools/cmake/build.cmake:685 (__build_expand_requirements)
+  /home/deity/esp/esp-idf/tools/cmake/project.cmake:740 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+

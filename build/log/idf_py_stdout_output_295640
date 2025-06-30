@@ -1,0 +1,64 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/deity/esp/fizzy_wair/build/bootloader/esp-idf/esptool_py && /home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/deity/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/deity/esp/fizzy_wair/build/bootloader/bootloader.bin
+Bootloader binary size 0x66a0 bytes. 0x960 bytes (8%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/fizzy_wair.c.obj
+In file included from /home/deity/esp/fizzy_wair/main/fizzy_wair.c:12:
+/home/deity/esp/fizzy_wair/main/fonts6x8.h: In function 'get_char_data':
+/home/deity/esp/fizzy_wair/main/fonts6x8.h:73:11: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   73 |     if (c < 0 || c > 127) {
+      |           ^
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable fizzy_wair.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/deity/esp/fizzy_wair/build/fizzy_wair.bin
+[9/10] cd /home/deity/esp/fizzy_wair/build/esp-idf/esptool_py && /home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/deity/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/deity/esp/fizzy_wair/build/partition_table/partition-table.bin /home/deity/esp/fizzy_wair/build/fizzy_wair.bin
+fizzy_wair.bin binary size 0x2f480 bytes. Smallest app partition is 0x100000 bytes. 0xd0b80 bytes (82%) free.
+[9/10] cd /home/deity/esp/esp-idf/components/esptool_py && /home/deity/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -D IDF_PATH=/home/deity/esp/esp-idf -D "SERIAL_TOOL=/home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python;;/home/deity/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/deity/esp/fizzy_wair/build -P /home/deity/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 fizzy_wair.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.0
+Serial port /dev/ttyUSB0
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 38:18:2b:7f:73:98
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0003ffff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26272 bytes to 16589...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000758d... (100 %)
+Wrote 26272 bytes (16589 compressed) at 0x00001000 in 0.5 seconds (effective 407.3 kbit/s)...
+Hash of data verified.
+Compressed 193664 bytes to 108022...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001c6fb... (28 %)
+Writing at 0x00023442... (42 %)
+Writing at 0x000294f2... (57 %)
+Writing at 0x0002f8eb... (71 %)
+Writing at 0x0003556c... (85 %)
+Writing at 0x0003b9cc... (100 %)
+Wrote 193664 bytes (108022 compressed) at 0x00010000 in 2.5 seconds (effective 615.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1198.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

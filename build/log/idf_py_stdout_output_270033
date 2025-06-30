@@ -1,0 +1,163 @@
+Command: /home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/deity/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/deity/esp/fizzy_wair/build/fizzy_wair.elf /home/deity/esp/fizzy_wair/build/bootloader/bootloader.elf -m '/home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python' '/home/deity/esp/esp-idf/tools/idf.py'
+�xсoffsets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v6.0-dev-896-g1bbf04cb4c-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2025 01:46:23[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b72ch ( 46892) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b754 vaddr=3ff80000 size=00024h (    36) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b780 vaddr=3ffb0000 size=02600h (  9728) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001dd88 vaddr=40080000 size=02290h (  8848) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=13b6ch ( 80748) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00033b94 vaddr=40082290 size=0b2c4h ( 45764) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (197) cpu_start: Pro cpu start user code[0m
+[0;32mI (197) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (197) app_init: Application information:[0m
+[0;32mI (197) app_init: Project name:     fizzy_wair[0m
+[0;32mI (201) app_init: App version:      1[0m
+[0;32mI (205) app_init: Compile time:     Jun 29 2025 01:46:16[0m
+[0;32mI (210) app_init: ELF file SHA256:  c29ca2cc4...[0m
+[0;32mI (214) app_init: ESP-IDF:          v6.0-dev-896-g1bbf04cb4c-dirty[0m
+[0;32mI (220) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (224) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (228) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (232) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (238) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (266) spi_flash: detected chip: generic[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (284) main_task: Started on CPU0[0m
+[0;32mI (294) main_task: Calling app_main()[0m
+
+I2C scan:
+[1;31mE (294) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (294) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (304) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (314) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (324) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (334) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (344) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (354) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (364) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (374) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (384) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (394) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (404) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (404) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (414) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (424) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (434) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (444) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (454) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (464) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (474) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (484) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (494) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (504) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (514) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (524) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (534) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (544) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (554) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (564) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (574) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (584) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (584) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (594) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (604) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (614) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (624) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (634) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (644) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (654) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (664) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (674) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (684) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (694) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (704) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (714) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (724) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (734) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (744) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (754) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (764) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (764) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (774) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (784) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (794) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (804) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (814) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (824) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (834) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (844) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (854) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (864) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (874) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (884) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (894) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (904) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (914) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (924) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (934) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (934) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (944) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (954) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (964) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (974) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (984) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (994) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1004) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1014) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1024) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1034) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1044) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1054) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1064) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1074) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1084) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1094) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1104) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1114) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1124) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1134) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1134) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1144) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1154) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1164) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1174) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1184) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1194) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1204) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1214) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1224) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1234) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1244) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1254) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1264) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (1274) i2c.master: probe dev

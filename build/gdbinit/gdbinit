@@ -1,0 +1,2 @@
+source /home/deity/esp/fizzy_wair/build/gdbinit/symbols
+source /home/deity/esp/fizzy_wair/build/gdbinit/connect

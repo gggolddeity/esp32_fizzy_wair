@@ -1,0 +1,1574 @@
+Command: /home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/deity/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/deity/esp/fizzy_wair/build/fizzy_wair.elf /home/deity/esp/fizzy_wair/build/bootloader/bootloader.elf -m '/home/deity/.espressif/python_env/idf6.0_py3.10_env/bin/python' '/home/deity/esp/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/deity/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+[0m
+[0;33m--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x400855f1: panic_abort at /home/deity/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x400855b9: esp_system_abort at /home/deity/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b771: abort at /home/deity/esp/esp-idf/components/newlib/src/abort.c:38
+--- 0x4008554b: _esp_error_check_failed at /home/deity/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x400d6761: app_main at /home/deity/esp/fizzy_wair/main/fizzy_wair.c:96
+--- 0x400e30e2: main_task at /home/deity/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x40086219: vPortTaskWrapper at /home/deity/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/deity/esp/esp-i
