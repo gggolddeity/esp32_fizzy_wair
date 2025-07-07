@@ -1,9 +1,0 @@
-
-
-# Load bootloader symbols
-set confirm off
-    add-symbol-file /home/deity/esp/fizzy_wair/build/bootloader/bootloader.elf
-set confirm on
-
-# Load application symbols
-file /home/deity/esp/fizzy_wair/build/fizzy_wair.elf

@@ -28,6 +28,5 @@
     <mapping directory="$PROJECT_DIR$/../esp-idf/components/protobuf-c/protobuf-c" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../esp-idf/components/spiffs/spiffs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../esp-idf/components/unity/unity" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/components/esp-idf-lib" vcs="Git" />
   </component>
 </project>
