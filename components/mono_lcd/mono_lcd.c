@@ -4,15 +4,10 @@
 
 #include "mono_lcd.h"
 #include "esp_log.h"
-#include "driver/i2c.h"
 #include "esp_lcd_panel_io.h"
+#include "driver/i2c.h"
 #include "esp_lcd_panel_ops.h"
 #include "esp_lcd_panel_vendor.h"
-#include "driver/i2c.h"
-#include "esp_lcd_panel_io.h"
-#include "esp_lcd_panel_ops.h"
-#include "esp_lcd_panel_vendor.h"
-#include "esp_log.h"
 #include "driver/i2c_master.h"
 #include "fonts6x8.h"
 #include <string.h>
